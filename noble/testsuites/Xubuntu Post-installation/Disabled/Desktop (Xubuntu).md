@@ -72,4 +72,4 @@ Try to pair a Bluetooth device using the Bluetooth symbol in the panel.
     Can you pair your computer and the other device?
 Try to send a file from your device to your computer and the other way round
     Can you send and receive files with your computer?
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

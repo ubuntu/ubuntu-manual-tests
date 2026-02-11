@@ -54,5 +54,5 @@ Put the installation medium back in, and boot into the installation of a new sys
 Continue installation as normal, and reboot once finished.
 Boot into the installed system and check the file you created in the previous install is present in the '/home/' directory
     cat /home/$USER/dummy_file
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result.  
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result.  
 If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

@@ -25,4 +25,4 @@ Click ""Close"". Go to Settings     Go to Users. Unlock. Enter your password.
     Add a user. Make sure this user is **not** an administrator. Set a password. Click ""Add"". Log Out
 Log in as this new user
 Verify that items selected in Edubuntu Menu Administration are **NOT** shown in the Applications Overview
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

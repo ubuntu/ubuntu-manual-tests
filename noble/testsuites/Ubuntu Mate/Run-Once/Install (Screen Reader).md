@@ -29,4 +29,4 @@ Press Enter to begin the installation
 Once the installer tells you it is finished, Restart the system now by pressing Enter
 Wait a few seconds for the cd drive to quit spinning, remove the disc and press Enter
 After restarting, at the desktop, you must restart again. This will start the screen-reader. It will then start at login
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

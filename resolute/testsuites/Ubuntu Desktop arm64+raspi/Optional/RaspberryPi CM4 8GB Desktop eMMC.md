@@ -121,7 +121,7 @@ Test `dtparam`
 
     The sd_overclock parameter should show up as set. Remove it by running `sudo dtparam -r 0`
 Run `sudo pinctrl`
-    THe output should have status of the GPIO pins.
+    The output should have status of the GPIO pins.
 Run `sudo raspinfo`
     The output should have an information dump about the Pi.
 

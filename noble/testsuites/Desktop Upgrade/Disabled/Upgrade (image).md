@@ -44,4 +44,4 @@ Open a terminal and enter the command `grep Prompt= /etc/update-manager/release-
     For a _LTS to normal_ upgrade, terminal will show Prompt=normal
     For a _LTS to LTS_ upgrade, terminal will show Prompt=normal
 Verify that your pre-upgrade files and installed applications are still present
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

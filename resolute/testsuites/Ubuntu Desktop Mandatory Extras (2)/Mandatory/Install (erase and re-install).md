@@ -86,5 +86,5 @@ Login as the user you created, or ensure that you are auto-logged in as the user
 Check that the 'test' folder created on the first install has disappeard from the desktop, open Firefox and check that in the history tab has no browsing history, then open a Terminal typing CTRL+ALT+T and type 'df -h' in it without quotes, there should be no /home partition
     You should verify that the /home partition has been wiped out an no previous data has been left back 
 
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result.  
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result.  
 If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

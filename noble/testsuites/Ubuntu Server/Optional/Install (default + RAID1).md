@@ -232,4 +232,4 @@ Test booting from a hot-degraded array:
     Remove (unplug/fail) one disk from the running system.
     Check if users/admin get a notification message and beep about the failing raid.
     Reboot, verify that system comes up degraded without failure. (BOOT_DEGRADED setting bogus, Bug #539597)
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**. 
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**. 

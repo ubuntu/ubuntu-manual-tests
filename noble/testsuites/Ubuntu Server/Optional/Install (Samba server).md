@@ -37,4 +37,4 @@ Verify winbind is responding to requests:
 Verify winbind basic functionality:
     wbinfo --all-domains
     has to return two lines: one with ""BUILTIN"", the other with the unqualified hostname in uppercase. For example, a hostname like ""ubuntu"" would be in the wbinfo output text as ""UBUNTU"".
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

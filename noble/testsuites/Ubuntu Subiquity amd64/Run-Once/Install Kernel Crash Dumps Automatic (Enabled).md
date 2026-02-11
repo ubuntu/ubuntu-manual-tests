@@ -65,4 +65,4 @@ Ensure that:
     * The contents of ""/var/log/installer/curtin-install.log"" 
   * If performing the test with a VM, note that it has been reported that thin provisioning of disk images may cause the enablement to fail where it was otherwise expected. Check the output of `df -h /var` within the VM (in the newly installed system) in these cases. 
 
-**If you finish the installation, please[submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If you finish the installation, please [submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

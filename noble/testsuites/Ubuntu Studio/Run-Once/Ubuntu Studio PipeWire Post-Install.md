@@ -8,4 +8,4 @@ Make sure Hydrogen is connected to your speakers
     You can close Hydrogen once you are done
 Test desktop sound through Pipewire
     Open firefox and go to any page that has audio. Flash video will not work, so html5 is preferred - such as http://youtube.com/html5. 
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

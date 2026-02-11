@@ -249,4 +249,4 @@ Click accept and commission
     The node should now be available for use
 In order to test maas+juju, you should add and prepare additional nodes now using the above steps
      The total nodes in the system should now correspond to the number of added nodes
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**. 
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**. 

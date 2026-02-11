@@ -32,4 +32,4 @@ If you installed a non-english version of FAMILY, note the language used on the 
 After installing a system, follow the two test cases here to test the GNOME suite of applications:
     https://wiki.ubuntu.com/DesktopTeam/TestPlans/gjs
 This test case is primarily useful when there have been updates to gjs, but is still worthy of testing on every release.
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

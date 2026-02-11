@@ -60,4 +60,4 @@ Verify that Tomcat is able to properly display the ""Hello World!"" example page
     A ""Hello World!"" page should be brought up
 Verify that Tomcat is able to display a page containing basic arithmetics, entering `w3m http:localhost:8080/examples/jsp/jsp2/el/basic-arithmetic.jsp` at the prompt
     A ""JSP 2.0 Expression Language - Basic Arithmetic"" page should be brought up
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

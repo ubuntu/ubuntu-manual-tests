@@ -23,4 +23,4 @@ Reboot the system, and monitor the progress via the (sol) console.
 Ensure that it's possible to login to the system.
 Ensure that you can run commands with sudo.
 Check that the correct SSH keys have been imported by SSHing into the machine or looking in ~/.ssh./
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

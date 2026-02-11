@@ -31,4 +31,4 @@ Wait that the system reboot
 Enter passphrase, login and run:
     sudo mount
     Verify that the root file system is mounted from /dev/mapper/ubuntu-root and securityfs is mounted from /sys/kernel/security.
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

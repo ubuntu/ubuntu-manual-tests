@@ -68,4 +68,4 @@ Verify that the linux-restricted-modules package has not been installed by typin
     dpkg -l linux-restricted-* |  grep -vE ""^[a-z]n""
 
     No packages printed (some lines of text will appear, but after +=====etc sequence username command prompt line will appear)
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

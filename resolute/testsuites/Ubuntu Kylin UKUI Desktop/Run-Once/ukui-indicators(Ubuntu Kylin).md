@@ -12,4 +12,4 @@ Click “Weather” icon in indicator
     The weather setting options show up successfuly. Weather of the current city shows correctly.
 Click “put-in method” icon in indicator
     Put-in method setting options show successfully.Sogou put-in method can be seen in Chinese version system. 
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**.
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result**.

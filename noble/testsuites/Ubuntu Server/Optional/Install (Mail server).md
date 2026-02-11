@@ -38,4 +38,4 @@ Verify that dovecot pop3 and imap servers are running:
 Try to send a test email:
     echo foo | mail -s test ${USER}
     Run mutt and press enter to see the mail, press **q** to exit
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

@@ -47,4 +47,4 @@ Ensure that:
 
   * If the results are not as expected, please include the output of the following command in your bug report: `sudo /usr/share/kdump-tools/kdump_set_default`
 
-**If you finish the installation, please[submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If you finish the installation, please [submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

@@ -46,4 +46,4 @@ Download and place the netboot artifacts:
 
 Power on the test machine and ensure that it boots from the network device. Complete the installation, using the provided defaults where possible. Reboot the machine and ensure that you can log into the system with the username and password you provided. 
 
-**If you finish the installation, please[submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If you finish the installation, please [submit](<>) a 'passed' result. If any action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

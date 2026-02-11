@@ -16,4 +16,4 @@ Press the down arrow to select FAMILY and press Enter
     The Automated Linux install will now install Linux for you and will then reboot
 On the Windows Boot menu select FAMILY again and press Enter
     FAMILY boots up
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

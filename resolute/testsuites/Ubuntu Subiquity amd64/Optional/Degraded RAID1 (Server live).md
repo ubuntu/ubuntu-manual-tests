@@ -30,4 +30,4 @@ Remove one of the disks that are part of the RAID
 Boot the system
 Ensure that you can log into the system
 Run `sudo mdadm -D /dev/md0` and verify the presence of a line stating that the ""State"" line reports the RAID is degraded
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

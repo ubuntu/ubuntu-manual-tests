@@ -34,4 +34,4 @@ Allow the machine to reboot
 Click to open the menu at the bottom left, mouse over ""Preferences"" and click ""Lubuntu Update""
     Lubuntu Update loads with no updates available
 Click ""Check for Updates"" and enter your password when prompted
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

@@ -111,4 +111,4 @@ Launch 'Time & Date' settings menu and note the timezone information and local t
     The timezone, date and time match the settings you selected during installation
 If you installed a non-english version of FAMILY, note the language used on the desktop
     The desktop is localized into your language, or it has prompted you upon initial login to install the missing components for your language
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result.If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result.If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**

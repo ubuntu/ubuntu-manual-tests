@@ -19,4 +19,4 @@ Type the command **sudo snap refresh SNAP-NAME** (and RETURN key) in the termina
 While the progress bar is visible, click over the icon to launch the application.
     A message must pop-up over the icon informing that the snap can't be launched because it is being updated, and to try again later.
 When the **refresh** command ends, the progress bar must disappear. Clicking on the icon must launch the application.
-**If all actions produce the expected results listed, please[submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
+**If all actions produce the expected results listed, please [submit](<>) a 'passed' result. If an action fails, or produces an unexpected result, please [submit](<>) a 'failed' result and [file a bug](<>). Please be sure to include the bug number when you [submit](<>) your result.**
