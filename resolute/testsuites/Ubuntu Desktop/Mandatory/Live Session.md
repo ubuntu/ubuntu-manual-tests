@@ -1,24 +1,34 @@
-<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+# Install (entire disk)
 
-Test-case Live Session Start
-<dl>
-    <dt>Boot up the image</dt>
-        <dd>FAMILY boot screen is displayed</dd>
-    <dt>When the installer starts select your language in the left column</dt>
-        <dd>Language is selected, all labels are changed to translated versions</dd>
-    <dt>Click Continue</dt>
-        <dd>The 'Try or Install' screen is displayed with 'try FAMILY' and 'Install FAMILY' buttons</dd>
-    <dt>Click on the 'Try FAMILY' icon to select the option and click on the 'Continue' button</dt>
-        <dd>The default desktop is displayed</dd>
-</dl>
-Test-case Live Session Usage
-<dl>
-    <dt>Use and execute the default applications found for the desktop enviroment being run</dt>
-        <dd>All applications should function without error</dd>
-</dl>
+* Boot up the image
+  - If you see the GRUB menu, select the "Try or install Ubuntu" option to boot into the live session.
 
-<strong>
-    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+* Wait for the system to boot into the live session. The desktop installer should open automatically and play a welcome sound.
+
+* You should see the "Choose your language" page.
+  - Pick your desired language. (The instructions will remain in English).
+  - Click "Next".
+
+* You should see the "Accessibility" page.
+  - Click through the options, (Seeing, Hearing, Typing, Pointing and clicking, Zoom) and make sure the drop down options are fully functional.
+  - Click "Next".
+
+* You should see the "Keyboard layout" page.
+  - Choose your desired layout.
+  - Click "Next".
+
+* You should see the "Connect to the internet" page.
+  - Use the UI to connect to a network.
+  - Click "Next".
+
+* You should see the "Try or install Ubuntu" page.
+  - Click "Try Ubuntu".
+
+* Use and execute the default applications found for the desktop enviroment being run.
+  - All applications should function without error.
 
 
+----
+**If all actions produce the expected results listed, please submit a `passed` result.**
+
+**If an action fails, or produces an unexpected result, please submit a `failed` result and file a bug. Please be sure to include the bug number when you submit your result.**
