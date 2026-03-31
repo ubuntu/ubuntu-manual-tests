@@ -1,126 +1,105 @@
+# Install (UEFI Secure Boot with nVidia)
 
-    <p><em>Proceed in your native language if you wish. Instructions will remain in English.</em></p>
-    <dl>
+This test is to ensure that the image boots in UEFI, that the resulting installation can boot in UEFI as well, regardless of network availability and that nVidia proprietary drivers are installed and loaded.
+Boot up the image in UEFI mode with Secure Boot enabled.
 
-    <dd><p>This test is to ensure that the image boots in UEFI, that the</dd>
-       <dd>resulting installation can boot in UEFI as well, regardless of network</dd>
-       <dd>availability and that nVidia proprietary drivers are installed and loaded.</dd>
-    <dt>Boot up the image in UEFI mode with <b>Secure Boot enabled</b></dt>
+* Boot up the image
+  - If you see the GRUB menu, select the "Try or install Ubuntu" option to boot into the live session.
 
-    <dt>Boot up the image</dt>
-      <dd>If you see the GRUB boot menu you should see the following:</dd>
-      <dd>
-         <ul>
-         <li>'Try or Install FAMILY'</li>
-         <li>'FAMILY (safe graphics)'</li>
-         <li>'OEM install (for manufacturers)'</li>
-         <li>'Test memory' (only on BIOS systems)</li>
-         </ul>
-      </dd>
+* Wait for the system to boot into the live session. The desktop installer should open automatically and play a welcome sound.
 
+* You should see the "Choose your language" page.
+  - Pick your desired language. (The instructions will remain in English).
+  - Click "Next".
 
-    <dt>Upon reaching the desktop environment, you should be greeted with the "Choose your language" screen.</dt>
-      <dd>Pick your desired language.</dd>
+* You should see the "Accessibility" page.
+  - Click through the options, (Seeing, Hearing, Typing, Pointing and clicking, Zoom) and make sure the drop down options are fully functional.
+  - Click "Next".
 
+* You should see the "Keyboard layout" page.
+  - Choose your desired layout.
+  - Click "Next".
 
-    <dt>You should be greeted with a panel where you are prompted to set any of your needed or desired accessibility options.</dt>
-      <dd>Click through the options, (Seeing, Hearing, Typing, Pointing and clicking, Zoom) and make sure the drop down options are fully functional.</dd>
+* You should see the "Connect to the internet" page.
+  - Use the UI to connect to a network.
+  - Click "Next".
 
+* You should see the "Try or install Ubuntu" page.
+  - Click "Install Ubuntu".
 
-    <dt>You're greeted with the 'Try or install FAMILY' slide. The 'FAMILY' logo should be on the left hand side.</dt>
-      <dd>Select "Install Ubuntu" to continue with the installation process, or "Try Ubuntu" to boot into a live session.</dd>
+* You should see the "Type of installation" page.
+  - Select "Interactive installation".
+  - Click "Next".
 
+* You should see the "Applications" page.
+  - Select "Default selection".
+  - Click "Next".
 
-    <dt>You should be greeted with a slide asking you to confirm your keyboard layout.</dt>
-      <dd>Feel free to either select your desired layout, or use the auto-detect feature at the bottom.</dd>
-    <dt>Proceed by clicking "Next"</dt>
+* You should see the "Optimise your computer" page.
+  - Check the "Install third-party software for graphics and Wi-Fi hardware and additional media formats" option.
+  - Click "Next".
 
-    <dt>In the next slide, disconnect from any network using the top panel controls.</dt>
+* You should see the "Disk setup" page.
+  - Select "Erase disk and install Ubuntu".
+  - Click "Next".
 
-    <dt>The 'Connect to a network' screen should now be displayed</dt>
-    <dd>The screen should reflect the current status and display the following options (unless you're in a VM):</dd>
-      <dd>
-         <ul>
-         <li>Wired connection</li>
-         <li>Connect to a Wi-Fi network followed by a scrollable list of available APs, displaying an active one colored with a leading checkmark</li>
-         <li>Connect to a hidden Wi-Fi network</li>
-         <li>I don't want to connect to internet for now</li>
-         </ul>
-      </dd>
-    <dd>If you ARE installing in a VM, you should check that the VM automatically has internet access. This is usually via a "wired connection".</dd>
-    <dd>If you're testing a testcase that requires no internet access, make sure the install medium does not have internet access by configuring it properly in this slide.</dd>
-    <dt>Click "Next"</dt>
+* You should see the "Encryption and file system" page.
+  - Select "No encryption".
+  - Click "Next".
 
-    <dt>In the next slide, check 'Install third-party software for graphics and Wi-Fi hardware'</dt>
+* You should see the "Create your account" page.
+  - Fill in the details for your user account.
+  - Click "Next".
 
-    <dt>The 'Applications and updates' screen is displayed, listing normal and minimal installation, as well as options for installing updates, third party software and additional media formats.</dt>
-    <dd>Select any options pertinent to the testcase - though "Default installation" is normally the desired option.</dd>
-    <dt>Click "Next"</dt>
+* You should see the "Select your timezone" page.
+  - If your system is connected to the internet, verify that the timezone that was auto-detected is accurate.
+  - Click "Next".
 
+* You should see the "Ready to install" page.
+  - Check that the summary of the installation options you selected throughout the process is accurate.
+  - Click "Install".
 
-      <dd>The 'Installation type' screen is displayed</dd>
+* You should see a slideshow while the installation is taking place.
+  - Wait for the installation to complete.
 
+* You should see the "Installation complete" page.
+  - Click "Restart Now".
 
-    <dt>Select "Erase disk and install ubuntu"</dt>
-    <dt>Click 'Next'</dt>
+* Allow the machine to reboot.
 
+* You should see the login screen with the username you created during the installation process.
+  - Log in with the password you set during the installation process.
 
-    <dt>You should be greeted with the "Set up your account" slide</dt>
-      <dd>Put in your desired user details.</dd>
+* Open a terminal, run the following commands and verify their output (the exact output depends on your hardware):
+  - `nvidia-smi`
+    ```
+    Thu Apr 23 11:40:22 2020       
+    +-----------------------------------------------------------------------------+
+    | NVIDIA-SMI 440.64       Driver Version: 440.64       CUDA Version: 10.2     |
+    |-------------------------------+----------------------+----------------------+
+    | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+    | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+    |===============================+======================+======================|
+    |   0  GeForce MX150       Off  | 00000000:01:00.0 Off |                  N/A |
+    | N/A   48C    P0    N/A /  N/A |      0MiB /  2002MiB |      0%      Default |
+    +-------------------------------+----------------------+----------------------+
 
+    +-----------------------------------------------------------------------------+
+    | Processes:                                                       GPU Memory |
+    |  GPU       PID   Type   Process name                             Usage      |
+    |=============================================================================|
+    |  No running processes found                                                 |
+    +-----------------------------------------------------------------------------+
+    ```
+  - `sudo prime-supported`
+    ```
+    yes
+    ```
+  - `nvidia-settings`
 
-    <dt>You should be greeted with the "Select your timezone" slide</dt>
-      <dd>If your system is connected to the internet, verify that the timezone that was auto-detected is accurate</dd>
-      <dd>Note that, if you're on a VPN, the timezone will be affected by this.</dd>
-    <dt>Click 'Next'</dt>
+    Verify that settings are displayed and you can configure the card.
+    
+----
+**If all actions produce the expected results listed, please submit a `passed` result.**
 
-
-    <dt>You should be greeted by the "Ready to install" slide.</dt>
-    <dt>On this slide, the devices to be changed and the partition table is shown to the user.</dt>
-      <dd>Check that the devices listed and the partition table listed is accurate and representative of the install options you set earlier in the process.</dd>
-    <dt>Click 'Next'</dt>
-
-
-    <dt>Allow the machine to reboot</dt>
-      <dd>The system boots properly and loads into FAMILY showing username selected</dd>
-
-    <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY showing username selected</dd>
-    <dt>Login</dt>
-        <dd>The session starts</dd>
-    <dt>Open a terminal, run the following commands and verify their output (the output depends on your hardware)</dt>
-        <dd><code>
-$ nvidia-smi
-Thu Apr 23 11:40:22 2020       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 440.64       Driver Version: 440.64       CUDA Version: 10.2     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  GeForce MX150       Off  | 00000000:01:00.0 Off |                  N/A |
-| N/A   48C    P0    N/A /  N/A |      0MiB /  2002MiB |      0%      Default |
-+-------------------------------+----------------------+----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-
-$ sudo prime-supported
-yes
-        </code></dd>
-    <dt>Run 'nvidia-settings'</dt>
-        <dd>Verify that settings are displayed and you can configure the card</dd>
-
-    </dl>
-    <p>If <strong>all</strong> actions produce the expected results described,
-      please <a href="results#add_result">submit</a> a 'passed' result.</p>
-    <p>If <strong>any</strong> action fails, or produces an unexpected result,
-      please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include
-      the bug number when you <a href="results#add_result">submit</a> your
-      result.</p>
-
-
+**If an action fails, or produces an unexpected result, please submit a `failed` result and file a bug. Please be sure to include the bug number when you submit your result.**
