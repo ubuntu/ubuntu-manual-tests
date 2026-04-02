@@ -33,9 +33,6 @@
   - Select your installation method and click Next 
   - At this point, there may be different options for installation depending on what is installed on your current storage device(s). Choose the option you wish to use. Manual paritioning is available under the 'Manual Installation' option, and clicking Next will bring you to the manual partitioning screen.
 
-* The 'Encryption and file system' screen is displayed
-  - If you wish to setup encryption, you may do so here. Otherwise, click Next
-
 * The 'Create your account' screen appears
   - Input your user details and password.
   - **Note**: admin cannot be used - it is a dedicated Linux User.
@@ -52,7 +49,7 @@
   - **WARNING**: Changes you make to your file system will be applied if you click next. Make sure, even if you think you are sure, that you are doing what you want.
 
 * Review your options and click 'Install'
-  - The installer slideshow begins
+  - The 'Thank You' slide is shown
 
 * Wait for the installer to finish
   - An 'Installation complete' screen will appear
