@@ -1,0 +1,14 @@
+Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">IoT installation media</a>
+<em>This test requires that you can connect to your Raspberry Pi via serial console.</em>
+<dl>
+<dt>Connect a serial console. Then during boot, verify that:</dt>
+        <dt>You see kernel output during boot</dt>
+        <dt>Login prompt works</dt>
+        <dd>Eventually a <code>login:</code> prompt should appear, and can be
+        used successfully to login to the machine</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+
+

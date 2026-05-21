@@ -1,0 +1,96 @@
+# Ubuntu Unity: Install using Calamares (OEM)
+
+*Proceed in your native language if you wish. Instructions will remain in English*
+
+- Boot up the image
+  - Ubuntu Unity desktop is displayed
+- Connect to the Internet using the network widget
+  - Network connection is successful
+- Click the application menu in the upper-left corner of the display, search for "OEM"
+- Click "Install Ubuntu Unity 26.04 (OEM mode)"
+  - A confirmation prompt appears asking if you really want to install using OEM mode
+- Click "Yes" in the popup
+  - Popup disappears
+  - Calamares installer starts shortly thereafter
+- On the "Welcome" pane, select your language from the language menu
+  - Text in the installer changes to match your chosen language
+- Click "Next"
+  - The "OEM Configuration" pane is shown
+  - The "Batch" identifier is shown as ubuntuunity-XXYY-year-month-day
+- Click "Next"
+  - The "Location" pane is shown with a map and options to select region, time zone, language, and number/date locale
+- Select the appropriate locale options
+  - The display should reflect your selections    
+- Click "Next"
+  - The "Keyboard" pane is shown
+- Select your keyboard layout, then type in the "Type here to test your keyboard" input box
+  - Keyboard layout is set properly
+- Click "Next"
+  - The "Customize" pane is shown
+  - "Normal Installation" should be selected, but there are also options for "Full Installation" and "Minimal Installation"
+  - "Download and install updates following installation" are unchecked
+  - The checkboxes under "Install additional third-party packages" are unchecked
+- Click "Next" without adjusting any settings
+  - The "Partitions" pane is shown
+- Select the disk to install to from the "Select storage device" menu
+  - The "Current" partition layout shown at the bottom of the screen matches the selected device
+- Select the "Erase disk" radio button
+  - Two menus appear under the "Erase disk" option, set to "Swap to file" and "ext4"
+  - The "Swap to file" menu contains "No swap" as the other available option
+  - The "ext4" menu contains "btrfs" and "xfs" as the other available options
+  - Above the partition layout, "Encrypt system" should be unchecked
+- If "BIOS" is displayed in the upper-left corner of the pane, set the "Bootloader location" below the partition layout to the "Master Boot Record" of the disk specified in the "Select storage device" menu
+- Click "Next"
+  - The "Users" pane is shown
+  - The name field is already filled with "OEM configuration" and cannot be edited
+  - The login name field is already filled with "oem" and cannot be edited
+- At the "Users" pane, enter details about the OEM user
+  - All details should be correctly filled in
+- Click "Next"
+  - The "Summary" pane is shown
+- Confirm the details you entered throughout the install are accurately shown
+- Click "Install"
+  - A popup appears confirming that you really do want to install
+- Click "Install now"
+  - The installation starts and the "Install" pane is shown
+  - The slideshow displays correctly
+  - Once the installation finishes, the "Finish" pane is automatically shown
+  - The "Restart now" checkbox in the "Finish" pane is automatically checked
+- Click "Done"
+  - System begins shutdown and prompts you to remove the installation media
+- Remove the media when prompted and hit enter as instructed
+- Allow the machine to reboot
+  - The system boots properly and loads into Ubuntu Unity
+  - The desktop is shown without having to enter a password
+- Double click on the "Finish OEM preparation" icon on the desktop
+- At the OEM mode informational dialog, click "Yes" to continue
+- At the dialog saying that the account setup wizard will be run at next bootup, click "OK"
+- Reboot the machine
+  - The system boots straight to the Calamares installer
+- At the "Welcome to Ubuntu Unity setup" pane, select your language from the language menu
+  - Text in the installer changes to match your chosen language
+- Click "Next"
+  - The "Location" pane is shown with a map and options to select region, time zone, language, and number/date locale
+- Select the appropriate locale options
+  - The display should reflect your selections    
+- Click "Next"
+  - The "Keyboard" pane is shown
+- Select your keyboard layout, then type in the "Type here to test your keyboard" input box
+  - Keyboard layout is set properly
+- Click "Next"
+  - The "Users" pane is shown
+- Enter details about the main system user
+  - All details should be correctly filled in
+- Click "Set Up"
+  - A popup appears confirming that you really do want to set up the system
+- Click "Set Up Now"
+  - The setup process starts and the "Set Up" pane is shown
+  - The slideshow should correctly display
+  - Once setup finishes, the "Finish" pane is automatically shown
+  - The "Restart now" checkbox in the "Finish" pane is automatically checked
+- Click "Done"
+  - The system reboots properly and loads into Ubuntu Unity showing the username you entered
+
+**If all actions produce the expected results listed, please [submit](results#add_result) a 'passed' result.**
+
+**If an action fails, or produces an unexpected result, please [submit](results#add_result) a 'failed' result and [file a bug](../../buginstructions). Please be sure to include the bug number when you [submit](results#add_result) your result.**
