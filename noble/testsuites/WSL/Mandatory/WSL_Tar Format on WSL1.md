@@ -115,7 +115,7 @@ $ sudo apt full-upgrade
 
 Verify that the command ends successfully and that any package that must be upgraded has been upgraded.
 
-Install a package:
+**Install a package:**
 
 ```
 $ sudo apt install hello
