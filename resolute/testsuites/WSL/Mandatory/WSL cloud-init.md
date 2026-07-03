@@ -40,7 +40,11 @@ write_files:
     [user]
     default=ubuntu
 
-packages: [hello, x11-apps, gtk-4-examples]
+packages:
+  - x11-apps
+  - gtk-4-examples
+  - snap:
+    - hello
 ```
 
 **Install a new instance from the image you downloaded**
@@ -154,12 +158,14 @@ Verify that the command ends successfully and that any package that must be upgr
 
 **CLI and graphical applications installed by cloud-init**
 
-Verify that the "hello" package has been successfully installed and the application can run:
+Verify that the "hello" package has been successfully installed and the application can run
+(If `/snap/bin` is not automatically added to your `PATH` then run `source /etc/profile`):
 
 ```
 $ hello
 Hello, world!
 ```
+
 
 Start one of the graphical application from the x11-apps package, like xcalc for example:
 
@@ -188,6 +194,24 @@ It's possible that it fails due [this WSL bug](https://github.com/microsoft/WSL/
 $ GDK_BACKEND=wayland XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir gtk4-demo
 (Wait a moment until the application starts and is displayed)
 ```
+
+**Install a snap package manually**
+
+Try a graphical snap such as `gnome-system-monitor`:
+
+```
+sudo snap install gnome-system-monitor
+gnome-system-monitor
+gnome-system-monitor
+libpxbackend-1.0.so: cannot open shared object file: No such file or directory
+Failed to load module: /home/user/snap/gnome-system-monitor/common/.cache/gio-modules/libgiolibproxy.so
+
+(gnome-system-monitor:6963): Gtk-WARNING **: 16:02:47.323: Trying to measure GtkButton 0x5757299c71e0 for width of 80, but it needs at least 88
+
+(gnome-system-monitor:6963): Gtk-CRITICAL **: 16:02:47.324: Allocation width too small. Tried to allocate 80x31, but GtkButton 0x5757299c71e0 needs at least 88x31.
+```
+
+_Some warnings may show up, the exact ones may depend on the application and version, but the window should render correctly and be functional_.
 
 **Check that Windows interoperability is still working**
 
@@ -238,4 +262,3 @@ TestUbuntuWSL
 **If all actions produce the expected results listed, please submit a `passed` result.** 
 
 **If an action fails, or produces an unexpected result, please submit a `failed` result and file a bug. Please be sure to include the bug number when you submit your result.**
-

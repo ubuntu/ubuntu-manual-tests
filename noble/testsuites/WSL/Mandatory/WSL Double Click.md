@@ -27,7 +27,6 @@ current Windows user name**, but that's a suggestion, users are free to change i
 In the example below the Windows user name is ubuntu:
 
 ```
-> wsl -d Ubuntu-24.04
 Provisioning the new WSL instance Ubuntu-24.04
 This might take a while...
 Create a default Unix user account: ubuntu
@@ -113,16 +112,48 @@ $ sudo apt full-upgrade
 
 Verify that the command ends successfully and that any package that must be upgraded has been upgraded.
 
-**Install a package:**
+**Install a package**
 
 ```
 $ sudo apt install hello
 ```
 
-Verify that the package has been successfully installed and the application can run:
+Verify that the package has been successfully installed and the application can run: 
 
 ```
 $ hello
+Hello, world!
+```
+
+**Install a snap package**
+
+```
+$ sudo apt remove hello
+```
+
+Verify that the package has been successfully uninstalled and the application can run:
+
+```
+$ hello
+Command 'hello' not found, but can be installed with:
+sudo snap install hello  # version 2.10, or
+sudo apt  install hello  # version 2.10-5build1
+See 'snap info hello' for additional versions.
+```
+
+Then install the snap version:
+
+```
+$ sudo snap install hello
+```
+
+Verify that the package has been successfully installed and the application can run
+(If `/snap/bin` is not automatically added to your `PATH` then run `source /etc/profile`): 
+
+```
+$ hello
+Hello, world!
+$ snap run hello
 Hello, world!
 ```
 
@@ -160,6 +191,22 @@ It's possible that it fails due [this WSL bug](https://github.com/microsoft/WSL/
 $ GDK_BACKEND=wayland XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir gtk4-demo
 (Wait a moment until the application starts and is displayed)
 ```
+
+Try a graphical snap as well:
+
+```
+sudo snap install gnome-system-monitor
+gnome-system-monitor
+gnome-system-monitor
+libpxbackend-1.0.so: cannot open shared object file: No such file or directory
+Failed to load module: /home/user/snap/gnome-system-monitor/common/.cache/gio-modules/libgiolibproxy.so
+
+(gnome-system-monitor:6963): Gtk-WARNING **: 16:02:47.323: Trying to measure GtkButton 0x5757299c71e0 for width of 80, but it needs at least 88
+
+(gnome-system-monitor:6963): Gtk-CRITICAL **: 16:02:47.324: Allocation width too small. Tried to allocate 80x31, but GtkButton 0x5757299c71e0 needs at least 88x31.
+```
+
+_Some warnings may show up, the exact ones may depend on the application and version, but the window should render correctly and be functional_.
 
 **Check that Windows interoperability is still working**
 
