@@ -15,34 +15,14 @@ host (Windows) filesystem (if they exist):
 - `%USERPROFILE%\.cloud-init`
 - `%USERPROFILE%\.ubuntupro\cloud-init`
 
-After downloading the image, navigate to it on Windows explorer:
+**Double click to install:**
 
-**Double-click the image to start the installation**
+After downloading the image, navigate to it on Windows explorer and double-click the image file to start the installation.
 
 A new terminal window will pop-up showing the registration progress. In the end it will
-give instructions to start a new shell into the new instance. Take note of that command. For
-example (for noble):
-
-```
-> wsl.exe -d Ubuntu-24.04
-```
-
-Verify that the new instance has been registered by running the following command:
-
-```
-> wsl.exe --list --all --verbose
-NAME             STATE           VERSION
-*Ubuntu          Running         2
-Ubuntu-24.04     Stopped         2
-Ubuntu-20.04     Stopped         2
-TestUbuntuWSL    Stopped         2
-```
-
-Check the the name used in previous command appears in the list.
-
-**Launch the new instance. The provisioning (OOBE) command will run and eventually will prompt for
-the new user creation. The input line should be prefilled with a user name derived from the
-current Windows user name.**
+run the first boot experience, the provisioning (OOBE) command, and eventually will prompt for
+the new user creation. **The input line should be prefilled with a user name derived from the
+current Windows user name**, but that's a suggestion, users are free to change it and hit enter.
 
 In the example below the Windows user name is ubuntu:
 
