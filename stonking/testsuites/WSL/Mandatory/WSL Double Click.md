@@ -186,9 +186,11 @@ dr-xr-xr-x 1 root root     512 Jun  4  2024  CSCmnt
 logout
 ```
 
-Check that your back to the PowerShell prompt.
+The terminal window will close.
 
 **Unregister the distro instance**
+
+Run the following command on a new PowerShell tab:
 
 ```
 > wsl.exe --unregister Ubuntu-24.04
