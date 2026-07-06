@@ -166,7 +166,7 @@ $ hello
 Hello, world!
 ```
 
-Start one of the graphical application from the x11-apps package, like xcalc for example:
+Start one of the graphical applications from the x11-apps package, like xcalc for example:
 
 ```
 $ xcalc
