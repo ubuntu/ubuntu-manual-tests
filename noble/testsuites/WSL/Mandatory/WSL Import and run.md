@@ -60,8 +60,7 @@ Release:        20.04
 Codename:       focal
 ```
 
-**Since Jammy (22.04) systemd is also enabled by default, so make sure it's running and that there are no
-failed units:**
+Tar-based images have systemd enabled by default, so make sure it's running and that there are no failed units:
 
 ```
 $ systemctl is-system-running
