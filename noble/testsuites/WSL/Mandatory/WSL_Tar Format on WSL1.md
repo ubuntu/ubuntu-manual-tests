@@ -1,6 +1,6 @@
 This case tests provisioning a tar-based WSL image as WSL 1.
 
-It requires a working Microsoft Windows 11 or higher installation with WSL version 2.4.10 or later. Instructions about how to install Windows and enable WSL 2 is outside of the scope of this document.
+It requires a working Microsoft Windows 11 or higher installation with WSL version 2.5.7 or later. Instructions about how to install Windows and enable WSL 2 is outside of the scope of this document.
 
 Since the release of Ubuntu LTS 24.04.2 Noble Numbat, tar-based images are found at [https://cdimages.ubuntu.com/ubuntu-wsl/](https://cdimages.ubuntu.com/ubuntu-wsl/)
 and their file extension is ".wsl" instead of ".tar.gz".

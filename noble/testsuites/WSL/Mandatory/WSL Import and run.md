@@ -1,6 +1,6 @@
 This test case imports a WSL image from a rootfs and runs it.
 
-It requires a working Microsoft Windows 10 or higher installation with WSL2 enabled. Installing Windows and enabling WSL 2 is outside of the scope of this  test case.
+It requires a working Microsoft Windows 11 or higher installation with WSL version 2.5.7 or later. Instructions about how to install Windows and enable WSL 2 is outside of the scope of this document.
 
 To run this test you must download the image from [http://cloud-images.ubuntu.com/](http://cloud-images.ubuntu.com/)
 
