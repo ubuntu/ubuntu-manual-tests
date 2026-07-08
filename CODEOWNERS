@@ -1,0 +1,39 @@
+# Each owner line is a glob pattern followed by one or more owners.
+# Order matters: the last matching pattern takes precedence.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+* @canonical/ubuntu-release-management
+
+# Ubuntu Desktop
+*/testsuites/Ubuntu Desktop**                         carlos.nihelton@canonical.com
+# WSL
+*/testsuites/WSL/**                                   carlos.nihelton@canonical.com
+
+# Raspi
+*/testsuites/Ubuntu Desktop arm64+raspi/**            dave.jones@canonical.com
+*/testsuites/Ubuntu Server arm64+raspi/**             dave.jones@canonical.com
+
+# Ubuntu Server specific arches
+*/testsuites/Ubuntu Subiquity ppc64el/**              patricia.domingues@canonical.com
+*/testsuites/Ubuntu Subiquity riscv64/**              heinrich.schuchardt@canonical.com
+*/testsuites/Ubuntu Subiquity s390x/**                frank.heimes@canonical.com
+
+# Kubuntu
+*/testsuites/Kubuntu**                                arraybolt3@ubuntu.com
+
+# Lubuntu
+*/testsuites/Lubuntu**                                arraybolt3@ubuntu.com
+
+# Ubuntu Cinnamon
+*/testsuites/Ubuntu Cinnamon**                        jpeisach@ubuntu.com
+
+
+# RISC-V / VisionFive / Milk-V / other SBCs
+*/testsuites/RISCV**                                  heinrich.schuchardt@canonical.com
+*/testsuites/VisionFive/**                            heinrich.schuchardt@canonical.com
+*/testsuites/VisionFive 2/**                          heinrich.schuchardt@canonical.com
+*/testsuites/Nezha/**                                 heinrich.schuchardt@canonical.com
+*/testsuites/LicheeRV/**                              heinrich.schuchardt@canonical.com
+*/testsuites/milkv-mars/**                            heinrich.schuchardt@canonical.com
+*/testsuites/jh7110/**                                heinrich.schuchardt@canonical.com
