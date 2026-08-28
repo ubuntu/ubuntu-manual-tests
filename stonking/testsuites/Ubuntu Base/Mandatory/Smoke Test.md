@@ -20,7 +20,7 @@ working order.
 
   The test will fail on a mount which any of the following mount options:
   ro, noexec, nosuid, nodev.
-* Extract the tarball.
+* Extract the tarball. **Sudo is needed to preserve chmod flags!**
 
       sudo tar -C base -zxf (release)-base-(arch).tar.gz
 
