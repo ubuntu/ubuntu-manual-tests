@@ -1,5 +1,15 @@
 # Test RISC-V preinstalled server image QEMU
 
+* Preparation
+
+  When running the test on RVA23 RISC-V hardware ensure that
+
+  * /dev/kvm exists. The kernel module can be loaded with
+
+        sudo modprobe kvm
+
+  * You are member of the kvm group.
+
 * Install prerequisites.
 
       sudo apt-get update
@@ -25,6 +35,9 @@
         +5G
 
 * Boot with device-tree.
+
+  When running on RVA23 RISC-V hardware add *-accel kvm* to the command below
+  and use *-cpu host*.
 
       qemu-system-riscv64 \
         -cpu rva23s64 \
@@ -59,10 +72,10 @@
         /usr/bin/hello
 
 * Perform snap testing
-  * Install a snap and check that it works, e.g. hello.
+  * Install a core26 snap and check that it works, e.g. hello-rva23.
 
-        sudo snap install hello
-        /snap/bin/hello
+        sudo snap install hello-rva23
+        /snap/bin/hello-rva23.hello
 
 * Reboot and login again.
 
@@ -81,6 +94,8 @@
   * The host console should be reached.
 
 * Boot with ACPI.
+
+  This is known to not be supported using KVM, yet.
 
       qemu-system-riscv64 \
         -cpu rva23s64 \
